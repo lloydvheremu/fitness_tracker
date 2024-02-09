@@ -5,10 +5,12 @@ class Graph extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      height: 100,
-      color: Colors.blue,
+    return Expanded(
+      child: Container(
+        width: double.infinity,
+        height: 100,
+        color: Colors.blue,
+      ),
     );
   }
 }

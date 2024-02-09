@@ -19,7 +19,13 @@ class MyApp extends StatelessWidget {
       title: 'Fitness Tracker',
       theme: ThemeData(),
       debugShowCheckedModeBanner: false,
-      home: DetailsPage(),
+
+      // routes
+      routes: {
+        '/': (context) => HomePage(),
+        '/details': (context) => DetailsPage()
+      },
+      initialRoute: '/',
     );
   }
 }
